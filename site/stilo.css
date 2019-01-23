@@ -14,6 +14,7 @@ header{
     background-position: top;
     background-repeat:no-repeat;
     align-items: flex-end;
+    justify-content: space-around
     
 }
 section{ 
@@ -26,13 +27,37 @@ section{
     background-color:#a6a39c;
 }
 section div{
+    display: flex;
+    align-items: center;
     width:32%;
     height: 250px;
-    background-color: forestgreen;
+    background-color: snow;
     margin:8px 0px;
+    border: 1px solid black;
+}
+figure{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+figure img{ 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;}
+figcaption{
+    position: absolute;
+    bottom: 10px;
+    width:100%;
+}
+figcaption h3{
+    text-align: center;
+    color: white;
+    font-family: impact, sans-serif;
+    font-size: 40px;
 }
 header div{
-    margin: 0px 0px 10px 78px;
+    width:85%;
+    margin-right: 15px;
 }
 #menu a{
     color: white;
@@ -42,32 +67,37 @@ header div{
     font-family: impact, sans-serif;
     font-size: 22pt;
 }
-#menu a:hover{ border-bottom: 3px solid black;}
+#menu a:hover{ border-bottom: 3px solid white;}
 footer{    
     width: 100%;
     height: 200px;
 }
 
-@media(max-width:800px){
-    
-}
+
 @media(max-width:600px){
     header{background-image: url("images/cabe%C3%A7alhocelular.png");
-    height: 225px;
+        width:100%;
+        height: 225px;
+        display:flex;
+        
+        
     }
     header div{ 
+        margin:0px;
         width:100%;
         display:flex;
         flex-direction: column;
         align-items: center;
-        align-content: ;
+        justify-content: center;
+        
         background-color: black;
     }
+    
     #menu a{ color: white;
         background-color: black;
         font-size: 15px;
     }
-    #menu a:active{ border-bottom: 3px solid white;}
+    #menu a:a{ border-bottom: 3px solid white;}
     section{ width:95%;
     
     }
